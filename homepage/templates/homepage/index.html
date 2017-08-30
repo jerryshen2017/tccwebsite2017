@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Tabernacle Campus Church - Buffalo, NY</title>
+
+    {% load staticfiles %}
+    <!-- Bootstrap Core CSS -->
+    <link href="{% static "homepage/css/bootstrap.min.css" %}" rel="stylesheet">
+
+    <!-- Custom CSS
+    <link href="{% static "homepage/css/agency.css" %}" rel="stylesheet">
+  -->
+    <link href="{% static "homepage/less/agency.less" %}" type="text/css" rel="stylesheet/less"/>
+    <script src="{% static "homepage/js/less.min.js" %}" type="text/javascript"></script>
+
+    <!-- Custom Fonts -->
+    <link href="{% static "homepage/font-awesome/css/font-awesome.min.css" %}" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Tabernacle Campus Church <p class="subtitle">I am a missionary!</p> </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#values">Values</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#campuses">Campuses</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#donate">Give</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#team">Team</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#location">Locations</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">Tabernacle Campus Church</div>
+                <div class="intro-heading">Welcome to TCC!</div>
+                <!--<a href="#values" class="page-scroll btn btn-xl">Tell Me More</a>-->
+                <a href="#values" class="btn btn-circle page-scroll">
+                    <i class="fa fa-angle-double-down animated"></i>
+                </a>
+
+                <!--
+                <div class="intro-facebook">
+                  Follow us on
+                  <a href="https://www.facebook.com/groups/128517000649475/" class="btn btn-circle page-scroll id="facebook-button"">
+                      <i class="fa fa-facebook"></i>
+                  </a>
+                </div>
+                -->
+            </div>
+        </div>
+    </header>
+
+    <!-- Values Section -->
+    <section id="values">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Our Values</h2>
+                    <h3 class="section-subheading text-muted">Our Mission is to make disciples of Jesus Christ in colleges in the WNY/Buffalo region.</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-book fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Discover</h4>
+                    <p class="text-muted">We will faithfully proclaim the Gospel - the life, death, and resurrection of Jesus Christ.</p>
+                </div>
+                <div class="col-md-3">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-heart fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Develop</h4>
+                    <p class="text-muted">We will diligently develop living relationships with the God of the Holy Trinity.</p>
+                </div>
+                <div class="col-md-3">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-group fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Disciple</h4>
+                    <p class="text-muted">We will make every effort to take our daily cross in order to be found in Jesus Christ as his disciples.</p>
+                </div>
+                <div class="col-md-3">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="glyphicon glyphicon-fire
+ fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Deploy</h4>
+                      <p class="text-muted">We will not hesitate to move forward whenever/wherever the Holy Spirit leads us.</p>
+                </div>
+            </div>
+            <div class="col-lg-12 text-center">
+                <br> <br> <br>
+                <p style="font-size: 17px;">
+                  <strong>Follow us on
+                  <a href="https://www.facebook.com/groups/128517000649475/">Facebook</a>! </strong>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid Section -->
+    <section id="campuses" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Campuses</h2>
+                    <h3 class="section-subheading text-muted">Campuses of Tabernacle Campus Church</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="{% static "homepage/img/portfolio/ubnorth.jpg" %}" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>University at Buffalo - North Campus</h4>
+                        <p class="text-muted">Please click/tab on the picture above for more info</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="{% static "homepage/img/portfolio/ubsouth.jpg" %}" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>University at Buffalo - South Campus</h4>
+                        <p class="text-muted">Please click/tab on the picture above for more info</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="{% static "homepage/img/portfolio/ecc.jpg" %}" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Erie Community College</h4>
+                        <p class="text-muted">Please click/tab on the picture above for more info</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="{% static "homepage/img/portfolio/medaille.jpg" %}" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Medaille College</h4>
+                        <p class="text-muted">Please click/tab on the picture above for more info</p>
+                    </div>
+                </div>
+            </div>  <!-- end row of portfolio lists -->
+        </div> <!-- end container -->
+    </section>
+
+    <!-- About Section -->
+    <section id="donate">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Give</h2>
+                    <h3 class="section-subheading text-muted">Give to TCC!</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 text-center">
+                        <p class="large text-muted">Thank you for making a difference in the life of an emerging leader. <br>
+                            By partnering with us and supporting our campus missionaries, you are joining us on a mission that we believe will help bring the Gospel of Lord Jesus Christ to Colleges and Universities.</p>
+                    </div>
+                    <div class="col-lg-6 text-center">
+{#                        <p class="large text-muted">Dasdfasfaserqwfwef</p>#}
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="NCTT5W9FDMEC8">
+                        <button type="submit" class="btn btn-lg">Donate <i class="fa fa-cc-paypal fa"></i></button>
+                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                        </form>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Team Section -->
+    <section id="team" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Our Team</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="team-member">
+                        <img src="{% static "homepage/img/team/namkung.jpg" %}" class="img-responsive img-circle" alt="">
+                        <h4>Rev. Hyun &amp; Jinhee Namkung</h4>
+                        <p class="text-muted">Lead Pastor</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="https://www.facebook.com/todaybible"><i class="fa fa-facebook"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--<div class="col-sm-3">
+                    <div class="team-member">
+                        <img src="{% static "homepage/img/team/dent.jpg" %}" class="img-responsive img-circle" alt="">
+                        <h4>Rev. Wayne &amp; Sharon Dent</h4>
+                        <p class="text-muted">Pastor</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="https://www.facebook.com/profile.php?id=100008701291665"><i class="fa fa-facebook"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>  -->
+                <!-- <div class="col-sm-3">
+                    <div class="team-member">
+                        <img src="{% static "homepage/img/team/marilyn.jpg" %}" class="img-responsive img-circle" alt="">
+                        <h4>Ms. Marilyn Foot-Karabe</h4>
+                        <p class="text-muted">Mentor</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>  -->
+                <!--<div class="col-sm-3">
+                    <div class="team-member">
+                        <img src="{% static "homepage/img/team/jeeah.jpg" %}" class="img-responsive img-circle" alt="">
+                        <h4>Jeeah Kim</h4>
+                        <p class="text-muted">Mentor</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>  -->
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <p class="large text-muted">
+                        Pastor Hyun and JinHee founded Tabernacle Campus Church in 2010 after faithfully serving 2 years of Acting Senior pastor in New Hope Korean church in Buffalo
+                        and 8 years of Campus Mission as staff of Korea Campus Crusade alongside with short-term international mission trips to Cambodia, Pakistan, Japan,
+                        China, Mexico, Uzbekistan, the Philippines, Thailand, Singapore, and USA.
+                        </br> </br>
+                       <!-- Rev. Wayne &amp; Sharon Dent are frontiers, seasoned ministers who are serving as pastor-mentors at TCC.
+                        Prior to joining TCC, they founded Faith Tabernacle Church in Lockport, NY, and
+                        pastored the church together for 38 years.
+                        </br> </br>
+                        Ms. Foote and Jeeah have been serving at TCC since its early days, providing tremendous help in the management of the church and services.
+                        </br> </br>  -->
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Our Locations</h2>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div class="map" id="map-ubnorth" style="height:400px;width:100%;">map loading...</div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <h3 class="section-heading">Click or tab on the marker icon for information. Enlarge to see the exact location.</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Contact Us</h2>
+                    <h3 class="section-subheading text-muted">We love to hear about your concerns and are happy to answer any questions.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <address><a href="mailto:webmaster@example.com" style="color: white; font-size:15px">tccatub@gmail.com</a> </address>
+            </div>
+            <div class="col-lg-12 text-center">
+                <br> <br> <br>
+                <p style="font-size: 20px; color: white">
+                  <strong>Follow us on
+                  <a href="https://www.facebook.com/groups/128517000649475/">Facebook</a>! </strong>
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Tabernacle Campus Church 2016</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="https://www.facebook.com/groups/128517000649475/"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="#donate"><i class="fa fa-cc-paypal"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Portfolio Modals -->
+    <!-- Use the modals below to showcase details about your portfolio projects! -->
+
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div id="carousel-ubnorth" class="carousel slide carousel-fade" data-ride="carousel">
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                          <div class="item active">
+                            <img class="img-responsive" src="{% static "homepage/img/TCCpics/ubnorth1.jpg" %}" alt="...">
+                            <div class="carousel-caption">
+                                TCC members At UB North Campus
+                            </div>
+                          </div>
+                          <div class="item">
+                            <img class="img-responsive" src="{% static "homepage/img/TCCpics/ubnorth2.jpg" %}" alt="...">
+                            <div class="carousel-caption">
+
+                            </div>
+                          </div>
+                          <div class="item">
+                            <img class="img-responsive" src="{% static "homepage/img/TCCpics/ubnorth3.jpg" %}" alt="...">
+                            <div class="carousel-caption">
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-ubnorth" role="button" data-slide="prev">
+                          <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-ubnorth" role="button" data-slide="next">
+                          <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                      </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>TCC at UB North Campus</h2>
+                            <p class="item-intro text-muted">
+                                "The Messiah will suffer and rise from the dead on the third day, and repentance for the forgiveness of sins
+                                 will be preached in His name to all nations, beginning at Jerusalem." - Luke 24:46-47
+                            </p>
+
+                            <p>
+                                The University at Buffalo (UB) is the largest campus in the State University of New York system and New York's leading University.
+                                <br> <br>
+                                Now UB is becoming the home of numerous international and American students.
+                                India, Pakistan, China, Singapore, Burma, Thailand, Indonesia, Japan, Nigeria, Malaysia, Kenya, and Korea are some of the countries
+                                that are in this region. In the mission field, this means these countries have not been completely reached by the Gospel.
+                            </p>
+                            </p>
+                                Students can be the most efficient and effective missionary vessels for reaching out the lost including students from many different countries.
+                                With this vision, on October 10th, 2010 Tabernacle Campus Church was established by devout South Korean minister couple
+                                Rev. Hyun and Jinhee Namkung, sponsored by Southern Baptist Convention (SBC) and Korean churches in WNY to plant multi-cultural ministry.
+                                TCC values the importance of a spiritual learning community where students are challenged and supported by devout mentors and friends who are Christians.
+                                Come and join us, the world is in your hands!
+                            <p>
+
+
+                            <table class="table table-hover">
+                              <caption>Service/Meeting</caption>
+                              <tr class="active">
+                                <th>Name</th>
+                                <th>Time</th>
+                                <th>Place</th>
+                              </tr>
+                              <tr>
+                                <td>Sunday Service</td>
+                                <td>11:30 am</td>
+                                <td>Student Union 330 (Commons Suite 200 in school breaks)</td>
+                              </tr>
+                              <tr>
+                                <td>Fellowship</td>
+                                <td>7pm, Friday</td>
+                                <td>Commons 200 (Located right above Starbucks coffee shop)</td>
+                              </tr>
+
+
+
+                            </table>
+
+
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div id="carousel-ubsouth" class="carousel slide carousel-fade" data-ride="carousel">
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                          <div class="item active">
+                            <img class="img-responsive" src="{% static "homepage/img/TCCpics/ubsouth1.jpg" %}" alt="...">
+                            <div class="carousel-caption">
+                                TCC members At UB South Campus
+                            </div>
+                          </div>
+                          <div class="item">
+                            <img class="img-responsive" src="{% static "homepage/img/TCCpics/ubsouth2.jpg" %}" alt="...">
+                            <div class="carousel-caption">
+
+                            </div>
+                          </div>
+                          <div class="item">
+                            <img class="img-responsive" src="{% static "homepage/img/TCCpics/ubsouth3.jpg" %}" alt="...">
+                            <div class="carousel-caption">
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-ubsouth" role="button" data-slide="prev">
+                          <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-ubsouth" role="button" data-slide="next">
+                          <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                      </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>TCC at UB South Campus</h2>
+                            <p class="item-intro text-muted">
+                                "Go rather to the lost sheep of Israel. As you go, preach this message; 'The kingdom of heaven is near.'" - Matthew 10: 6–7
+                            </p>
+
+                            <p>
+                                Tabernacle Campus Church at UB South is a Evangelical Christian ministry established solely for the UB South campus.
+                                We believe that this establishment has a significant calling for maximum spiritual impact not only for the South campus itself,
+                                but also for the surrounding community.
+                                <br> <br>
+                                Bordering this campus in the University district of Buffalo/Amherst houses a major population of UB Students.
+                                This community also suffers with a high crime rate which is strong evidence that the Love of God is void in this area.
+                            </p>
+                            </p>
+                                We believe that TCC at UB South is establishing an anointed Godly presence in the South campus community.
+                                Our prayer time is directly impacting the students' spiritual life right now. You are always welcome to join us!
+                            <p>
+
+
+                            <table class="table table-hover">
+                              <caption>Service/Meeting</caption>
+                              <tr class="active">
+                                <th>Name</th>
+                                <th>Time</th>
+                                <th>Place</th>
+
+
+                            </table>
+
+
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div id="carousel-ecc" class="carousel slide carousel-fade" data-ride="carousel">
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                          <div class="item active">
+                            <img class="img-responsive" src="{% static "homepage/img/TCCpics/ecc1.jpg" %}" alt="...">
+                            <div class="carousel-caption">
+                                TCC members At ECC
+                            </div>
+                          </div>
+                          <div class="item">
+                            <img class="img-responsive" src="{% static "homepage/img/TCCpics/ecc2.jpg" %}" alt="...">
+                            <div class="carousel-caption">
+
+                            </div>
+                          </div>
+                          <div class="item">
+                            <img class="img-responsive" src="{% static "homepage/img/TCCpics/ecc3.jpg" %}" alt="...">
+                            <div class="carousel-caption">
+
+                            </div>
+                          </div>
+                          <div class="item">
+                            <img class="img-responsive" src="{% static "homepage/img/TCCpics/ecc4.jpg" %}" alt="...">
+                            <div class="carousel-caption">
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-ecc" role="button" data-slide="prev">
+                          <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-ecc" role="button" data-slide="next">
+                          <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                      </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>TCC at ECC North</h2>
+                            <p class="item-intro text-muted">
+                                "The Messiah will suffer and rise from the dead on the third day, and repentance for the forgiveness of sins
+                                 will be preached in His name to all nations, beginning at Jerusalem." - Luke 24:46-47
+                            </p>
+
+                            <p>
+                                Erie Community College (ECC), with enrollment of more than 13,000 students, is the second largest college in Western New York.
+                                ECC offers more than 100 associate degrees, certificates, joint and online programs.
+                            <br> <br>
+                                ECC does not have a strong Christian based program on campus, limiting the spreading of the Gospel massage to its students.
+                                Tabernacle Campus Church’s (TCC) heart is burdened to act upon Jesus’ commands.
+                                The love of our Christ Jesus taught us to go and make disciplines to all nations.
+                                Being His disciples, we are willing and ready to take up His cross and follow Him by reaching out to other college campuses.
+                            </p>
+                            </p>
+                                TCC values the spirituality importance in students’ life.
+                                This opportunity is now in place so that the name of our Lord Jesus Christ shall be preached to more people at Erie Community College.
+                                Uniting to this calling, a group of devoted TCC members and mentors have bonded together to serve Erie Community College.
+                                We are committed to serving and mentoring ECC students.
+                                We provide a rich and warm environment for learning and living a Christ-centered life with our multi-cultural worship,
+                                faithful prayers, and spiritually nurturing ambiance.
+                            <p>
+
+
+                            <table class="table table-hover">
+                              <caption>Service/Meeting</caption>
+                              <tr class="active">
+                                <th>Name</th>
+                                <th>Time</th>
+                                <th>Place</th>
+                              </tr>
+                              <tr>
+                                <td>Sunday Service</td>
+                                <td>11:30 am (UB North) or 3 pm (UB South)</td>
+                                <td>You are invited to Sunday services at UB!</td>
+                              </tr>
+
+
+
+                            </table>
+
+
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 4 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div id="carousel-medaille" class="carousel slide carousel-fade" data-ride="carousel">
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                          <div class="item active">
+                            <img class="img-responsive" src="{% static "homepage/img/TCCpics/medaille1.jpg" %}" alt="...">
+                            <div class="carousel-caption">
+                                TCC members At Medaille College
+                            </div>
+                          </div>
+                          <div class="item">
+                            <img class="img-responsive" src="{% static "homepage/img/TCCpics/medaille2.jpg" %}" alt="...">
+                            <div class="carousel-caption">
+
+                            </div>
+                          </div>
+                          <div class="item">
+                            <img class="img-responsive" src="{% static "homepage/img/TCCpics/medaille3.jpg" %}" alt="...">
+                            <div class="carousel-caption">
+
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-medaille" role="button" data-slide="prev">
+                          <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-medaille" role="button" data-slide="next">
+                          <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                      </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>TCC at Medaille College</h2>
+                            <p class="item-intro text-muted">
+                                "Therefore go and make disciples of all nations, baptizing them in the name of the Father and of the Son and
+                                 of the Holy Spirit, and teaching them to obey everything I have commanded you." - Matthew 28:19-20
+                            </p>
+
+                            <p>
+                                Medaille College is an NCAA Division III institution with nearly 1,400 undergraduate students and about 200 graduate and doctoral students enrolled.
+                                It is conveniently located at the intersection of Route 198 and Parkside Avenue; mere footsteps away from Delaware Park in Buffalo, NY.
+                            <br> <br>
+                                Being obedient to Jesus’ command, Tabernacle Campus Church (TCC) is breaking ground and establishing a presence on campus in Western New York.
+                                Medaille College has a limited number of students (especially those who dorm) and the Gospel message of Jesus Christ is absent in the programs
+                                on campus there. TCC values the importance of a spiritual learning community where students are challenged and supported by devout mentors and
+                                friends who are Christians. We are committed to praying for, learning about, and mentoring the Medaille students.
+                            </p>
+                            </p>
+                                Students can be the most efficient and effective missionary vessels for reaching out to the lost including students from many different countries.
+                                Come join us every Saturday for multi-cultural worship, faithful prayer, and relevant leadership lessons from the Bible to enhance your daily life.
+                                TCC promises to equip you as an effective follower of Jesus Christ to help lead and serve the Medaille community. You can't miss it!
+                            <p>
+
+
+                            <table class="table table-hover">
+                              <caption>Service/Meeting</caption>
+                              <tr class="active">
+                                <th>Name</th>
+                                <th>Time</th>
+                                <th>Place</th>
+                              </tr>
+                              <tr>
+                                <td>Sunday Service</td>
+                                <td>11:30 am (UB North)</td>
+                                <td>You are invited to Sunday services at UB!</td>
+                              </tr>
+
+
+                            </table>
+
+
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="{% static "homepage/js/jquery.js" %}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{% static "homepage/js/bootstrap.min.js" %}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="{% static "homepage/js/classie.js" %}"></script>
+    <script src="{% static "homepage/js/cbpAnimatedHeader.js" %}"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="{% static "homepage/js/jqBootstrapValidation.js" %}"></script>
+    <script src="{% static "homepage/js/contact_me.js" %}"></script>
+
+    <!-- Google maps for locations -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBE_Ob8yxGdCf1O9srFxxHL8sD2yA0FyWs"></script>
+    <script src="{% static "homepage/js/gmaps.js" %}"></script>
+    <script src="{% static "homepage/js/maps.js" %}"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="{% static "homepage/js/agency.js" %}"></script>
+
+</body>
+
+</html>
